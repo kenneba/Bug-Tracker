@@ -15,13 +15,14 @@ namespace Bug_Tracker.Controllers
             return View();
         }
 
-        public IActionResult Index(AddBugViewModel bugViewModel)
+        public IActionResult Add(AddBugViewModel bugViewModel)
         {
             Bug newBug = new Bug
             {
-                Date = AddBugViewModel.Date,
-                Subject = AddBugViewModel.Subject,
-                Description = AddBugViewModel.Description,
+
+                BugDate = bugViewModel.BugDate,
+                BugSubject = bugViewModel.BugSubject,
+                BugDescription = bugViewModel.BugDescription,
 
             };
             return View();

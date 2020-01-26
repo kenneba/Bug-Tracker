@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Bug_Tracker.Models;
+using Bug_Tracker.ViewModels;
+
 
 
 
@@ -13,16 +15,16 @@ namespace Bug_Tracker.ViewModels
     public class AddBugViewModel
     {
         [Required]
-        [Display(Date = "Date")]
-        public string Date { get; set; }
+        [Display(BugDate="Date")]
+        public string BugDate { get; set; }
 
         [Required]
-        [Display(Subject = "Subject")]
-        public string Subject { get; set; }
+        //[Display(BugSubject = "Subject")]
+        public string BugSubject { get; set; }
 
         [Required]
         [Display(Description = "Description")]
-        public string Description { get; set; }
+        public string BugDescription { get; set; }
 
         public AddBugViewModel()
         {

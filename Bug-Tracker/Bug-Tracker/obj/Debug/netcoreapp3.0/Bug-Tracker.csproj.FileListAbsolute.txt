@@ -188,3 +188,6 @@ C:\Users\bridg\lc101\Bug-Tracker\Bug-Tracker\Bug-Tracker\bin\Debug\netcoreapp3.0
 C:\Users\bridg\lc101\Bug-Tracker\Bug-Tracker\Bug-Tracker\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\bridg\lc101\Bug-Tracker\Bug-Tracker\Bug-Tracker\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\bridg\lc101\Bug-Tracker\Bug-Tracker\Bug-Tracker\bin\Debug\netcoreapp3.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\bridg\lc101\Bug-Tracker\Bug-Tracker\Bug-Tracker\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\bridg\lc101\Bug-Tracker\Bug-Tracker\Bug-Tracker\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\bridg\lc101\Bug-Tracker\Bug-Tracker\Bug-Tracker\obj\Debug\netcoreapp3.0\Bug-Tracker.MvcApplicationPartsAssemblyInfo.cache

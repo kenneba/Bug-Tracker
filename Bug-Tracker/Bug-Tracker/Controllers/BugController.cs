@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bug_Tracker.Data;
 using Bug_Tracker.Models;
 using Bug_Tracker.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,12 @@ namespace Bug_Tracker.Controllers
             return View();
         }
 
+        private readonly BugDbContext context;
+
+        public BugController(BugDbContext dbContext)
+        {
+            context = dbContext;
+        }
         //public IActionResult Add()
         //{
         //    AddBugViewModel bugViewModel = new AddBugViewModel bugViewModel()

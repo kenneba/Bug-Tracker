@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace Bug_Tracker.Data
 {
-    public class BugContext : DbContext
+    public class BugDbContext : DbContext
     {
-        public BugContext(DbContextOptions<BugContext> options) : base(options)
+        public BugDbContext(DbContextOptions<BugDbContext> options) : base(options)
         {
         }
-        public DbSet<User> Users { get; set; }
         public DbSet<Bug> Bugs { get; set; }
     }
 }

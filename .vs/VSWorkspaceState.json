@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Bug-Tracker"
+    "\\Bug-Tracker",
+    "\\Bug-Tracker\\Bug-Tracker",
+    "\\Bug-Tracker\\Bug-Tracker\\Controllers",
+    "\\Bug-Tracker\\Bug-Tracker\\Models",
+    "\\Bug-Tracker\\Bug-Tracker\\Views"
   ],
   "SelectedNode": "\\Bug-Tracker\\Bug-Tracker.sln",
   "PreviewInSolutionExplorer": false

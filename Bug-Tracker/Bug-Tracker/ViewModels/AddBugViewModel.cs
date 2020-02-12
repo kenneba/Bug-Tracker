@@ -24,8 +24,5 @@ namespace Bug_Tracker.ViewModels
         [Display(Description = "Description")]
         public string Description { get; set; }
 
-        public AddBugViewModel()
-        {
-        }
     }
 }

@@ -13,5 +13,8 @@ namespace Bug_Tracker.Data
         {
         }
         public DbSet<Bug> Bugs { get; set; }
-    }
+
+        public DbSet<User> Users { get; set; }
+
+    }   
 }

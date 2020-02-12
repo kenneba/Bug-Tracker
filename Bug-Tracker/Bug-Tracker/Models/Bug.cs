@@ -7,7 +7,8 @@ namespace Bug_Tracker.Models
 {
     public class Bug
     {
-        private int BugID { get; set; }
+        public int ID { get; set; }
+
         public string CreatedDate { get; set; }
         public string Subject { get; set; }
         public string Description { get; set; }

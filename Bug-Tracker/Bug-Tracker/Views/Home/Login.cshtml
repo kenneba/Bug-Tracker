@@ -1,0 +1,25 @@
+﻿@model Bug_Tracker.ViewModels.LoginViewModel
+
+
+
+<h1>Login</h1>
+
+@ViewBag.error
+<form method="post" asp-controller="Home" asp-action="Login">
+    <table border="0" cellpadding="2" cellspacing="2">
+        <tr>
+            <td>Email Address</td>
+            <td><input type="text" name="emailaddress"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Login</td>
+            <td><input type="submit" value="Login"></td>
+        </tr>
+    </table>
+</form>
+
+

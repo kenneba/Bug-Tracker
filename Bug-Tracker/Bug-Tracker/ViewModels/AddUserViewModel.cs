@@ -8,16 +8,21 @@ namespace Bug_Tracker.ViewModels
 {
     public class AddUserViewModel
     {
-        
-        private int UserID { get; set; }
+
         [Required]
-        public string Name { get; set; }
-        [Required]
+        [Display(Name = "Email Address")]
         public string EmailAddress { get; set; }
-        [Required]
+
+        [Required, DataType(DataType.Password)]
         public string Password { get; set; }
+
+        [DataType(DataType.Password), Compare(nameof(Password))]
+        public string ConfirmPassword { get; set; }
+
         [Required]
-        public string Role { get; set; }
-        public int BugID { get; set; }
+        public bool Admin { get; set; }
+
+        public AddUserViewModel() { }
     }
 }
+

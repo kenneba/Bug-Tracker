@@ -8,8 +8,7 @@ namespace Bug_Tracker.ViewModels
 {
     public class AddUserViewModel
     {
-        
-        private int UserID { get; set; }
+     
         [Required]
         public string Name { get; set; }
         [Required]
@@ -18,6 +17,6 @@ namespace Bug_Tracker.ViewModels
         public string Password { get; set; }
         [Required]
         public string Role { get; set; }
-        public int BugID { get; set; }
+
     }
 }

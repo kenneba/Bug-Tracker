@@ -7,7 +7,7 @@ namespace Bug_Tracker.Models
 {
     public class User
     {
-        private int UserID { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public string EmailAddress { get; set; }
         public string Password { get; set; }

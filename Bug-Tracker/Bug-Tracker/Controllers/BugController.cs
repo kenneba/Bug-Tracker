@@ -11,21 +11,17 @@ namespace Bug_Tracker.Controllers
 {
     public class BugController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
 
-        private readonly BugDbContext context;
-
+        private BugDbContext context;
         public BugController(BugDbContext dbContext)
         {
             context = dbContext;
         }
-        //public IActionResult Add()
-        //{
-        //    AddBugViewModel bugViewModel = new AddBugViewModel bugViewModel()
-        //}
+
+        public IActionResult Index()
+        {
+            return View();
+        }
 
         public IActionResult Add(AddBugViewModel bugViewModel)
         {
@@ -34,11 +30,14 @@ namespace Bug_Tracker.Controllers
 
                 CreatedDate = bugViewModel.CreatedDate,
                 Subject = bugViewModel.Subject,
-                Description = bugViewModel.Description,
+                Description = bugViewModel.Description
 
             };
+            context.Bugs.Add(newBug);
+            context.SaveChanges();
 
-            return View();
+            return View(bugViewModel);
         }
+
     }
 }

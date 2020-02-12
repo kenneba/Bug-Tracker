@@ -15,14 +15,16 @@ namespace Bug_Tracker.ViewModels
     public class AddBugViewModel
     {
         [Required] 
+        
         public string CreatedDate { get; set; }
 
         [Required]        
         public string Subject { get; set; }
 
         [Required]
-        [Display(Description = "Description")]
+        
         public string Description { get; set; }
+
 
     }
 }
